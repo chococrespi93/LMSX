@@ -1,0 +1,37 @@
+/*Marxes da web, tipo de letra para a páxina e fondo de borrador*/
+body {
+    margin: auto;
+    width: 75%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('imaxes/borrador.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*Formato do título h1*/
+h1 {
+    text-align: center;
+    color:#ffcc00;
+    background-image: url('imaxes/madera.jpg');
+    background-repeat: repeat-x;
+    padding: 5px;
+}
+
+/*Formato dos títulos h2*/
+h2 {
+    color: #ffcc00;
+}
+
+/*Sección coas imaxes de validación aliñadas verticalmente*/
+main, main img {
+    vertical-align: middle;
+}
+
+/*Formato destacado para o recuadro de aviso*/
+#errores {
+    margin: auto;
+    width: 75%;
+    background-color:#ccccff ;
+    border: 2px dotted purple;
+    padding: 20px;
+}
