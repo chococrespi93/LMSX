@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+Unidade 1-A02 - Tarefa 5. Crear páxinas web con formularios.
+-->
+<html lang="gl">
+    <head>
+        <title>Tarefa 5</title>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8"/> 
+        <meta name="viewport" content="width-device-width"/>
+        <style>
+            body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            fieldset {
+                background-color:rgb(250, 250, 250);
+            }
+            legend.datos_personaxe {
+                background-color:hotpink;
+                color: white;
+            }
+            legend.datos_usuario {
+                background-color:cornflowerblue;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Formulario para a alta dunha nova personaxe</h1>
+        <form action="Tarefa5_confirmacion.html" enctype="multipart/form-data">
+            <fieldset>
+                <legend class="datos_personaxe">Datos da personaxe xogable</legend>
+                <p>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" value="" id="nome"/>
+                </p>
+                <p>
+                    <label for="apelidos">Apelidos</label>
+                    <input type="text" name="apelidos" size="50" id="apelidos"/>
+                </p>
+                <p>
+                    <label>Sube unha foto/imaxe da nova personaxe</label>
+                    <input type="file" name="foto" id="foto"/>
+                </p>
+                <p>
+                    <label>¿É a primeira vez que das de alta unha personaxe?</label>
+                    <input type="radio" name="alta" value="Si" id="si" checked/>
+                    <label for="si">Sí</label>
+                    <input type="radio" name="alta" value="Non" id="non"/>
+                    <label for="non">Non</label>
+                </p>
+                <p>
+                    <label for="alinamento">Aliñamento da personaxe (Se non estas seguro elixe <em>Aínda non sei</em>)</label>
+                    <select name="alinamento" id="alinamento">
+                        <option value="selecciona" selected="selected" disabled>-Selecciona-</option>
+                        <option value="nsnc">Aínda non sei</option>
+                        <option value="caotico_bo">Caótico Bo</option>
+                        <option value="caotico_neutral">Caótico Neutral</option>
+                        <option value="caotico_malvado">Caótico Malvado</option>
+                        <option value="neutral_bo">Neutral Bo</option>
+                        <option value="neutral_neutral">Neutral Neutral</option>
+                        <option value="neutral_malvado">Neutral Malvado</option>
+                        <option value="legal_bo">Legal Bo</option>
+                        <option value="legal_neutral">Legal Neutral</option>
+                        <option value="legal_malvado">Legal Malvado</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Clase da personaxe (pódesse escoller varias)</label>
+                    <input type="checkbox" name="clase_barbaro" id="barbaro" value="bárbaro"/>
+                    <label for="barbaro">Bárbaro</label>
+                    <input type="checkbox" name="clase_bardo" id="bardo" value="bardo"/>
+                    <label for="bardo">Bardo</label>
+                    <input type="checkbox" name="clase_bruxo" id="bruxo" value="bruxo"/>
+                    <label for="bruxo">Bruxo</label>
+                    <input type="checkbox" name="clase_clerigo" id="clerigo" value="clérigo"/>
+                    <label for="clerigo">Clérigo</label>
+                    <input type="checkbox" name="clase_druida" id="druida" value="druida"/>
+                    <label for="druida">Druida</label>
+                    <input type="checkbox" name="clase_explorador" id="explorador" value="explorador"/>
+                    <label for="explorador">Explorador</label>
+                    <input type="checkbox" name="clase_guerreiro" id="guerreiro" value="guerreiro"/>
+                    <label for="guerreiro">Guerreiro</label>
+                    <input type="checkbox" name="clase_feiticeiro" id="feiticeiro" value="feiticeiro"/>
+                    <label for="feiticeiro">Feiticeiro</label>
+                    <input type="checkbox" name="clase_mago" id="mago" value="mago"/>
+                    <label for="mago">Mago</label>
+                    <input type="checkbox" name="clase_monxe" id="monxe" value="monxe"/>
+                    <label for="monxe">Monxe</label>
+                    <input type="checkbox" name="clase_paladin" id="paladin" value="paladin"/>
+                    <label for="paladin">Paladín</label>
+                    <input type="checkbox" name="clase_picaro" id="picaro" value="picaro"/>
+                    <label for="picaro">Pícaro</label>
+                </p>
+                <p>
+                    <label>Descripción da personaxe:</label><br/>
+                    <textarea name="descricion" id="descricion" rows="5" cols="100"></textarea>
+                </p>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend class="datos_usuario">Datos de acceso do xogador de D&D</legend>
+                <p>
+                    <label for="usuario">Nome de usuario/a</label>
+                    <input type="text" required name="usuario" maxlength="10" id="usuario"/>
+                </p>
+                <p>
+                    <label for="contrasinal">Contrasinal</label>
+                    <input type="password" required name="contrasinal" value="" id="contrasinal"/>
+                </p>
+                <p>
+                    <label for="contrasinal2">Repita o contrasinal</label>
+                    <input type="password" required name="contrasinal2" value="" id="contrasinal2"/>
+                </p>
+            </fieldset>
+            <p>
+                <input type="reset" name="reseteado" value="Borrar datos do formulario" id="reseteado"/>
+                <input type="submit" name="alta_user" value="Crear personaxe" id="alta_user"/>
+            </p>
+        </form>
+    </body>
+</html>
