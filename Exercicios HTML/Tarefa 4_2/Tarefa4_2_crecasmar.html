@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+Unidade 1-A02 - Tarefa táboas 2 (opcional). Táboa sobre animales en perigo de extinción.
+-->
+<html lang="es-es">
+    <head>
+        <title>Animais en perigo de extinción</title>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8"/> 
+        <meta name="viewport" content="width-device-width"/>
+        <style>
+            table, th {
+                border: 1px solid;
+                text-align: center;
+                margin-left:auto; 
+                margin-right:auto;
+                padding: 10px;
+                border-color: rgb(56, 55, 55);
+            }
+            thead {
+                background-color: black;
+                color: white;
+            }
+            td.cabecera {
+                background-color: rgb(120, 120, 120);
+            }
+            td {
+                background-color: rgb(220, 220, 220);
+                border: 1px solid;
+                border-color: rgb(56, 55, 55);
+            }
+            td.perigo {
+                background-color: rgb(218, 7, 49);
+            }
+            body {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col" colspan="4">Animais en perigo de extinción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="cabecera">Nome</td>
+                    <td class="cabecera">Cabezas</td>
+                    <td class="cabecera">Previsión 2010</td>
+                    <td class="cabecera">Previsión 2020</td>
+                </tr>
+                <tr>
+                    <td>Balea</td>
+                    <td>6.000</td>
+                    <td>4.000</td>
+                    <td>1.500</td>
+                </tr>
+                <tr>
+                    <td>Oso Pardo</td>
+                    <td>50</td>
+                    <td colspan="2" rowspan="2" class="perigo">0</td>
+                </tr>
+                <tr>
+                    <td>Lince</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Tigre</td>
+                    <td>300</td>
+                    <td colspan="2">210</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
