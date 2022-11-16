@@ -1,0 +1,87 @@
+/* O texto contido en body */
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Título h1 en azul verdoso */
+#titulo {
+    color:darkcyan;
+}
+
+/* Os textos destacados contidos en p en vermello */
+p strong {
+    color: red;
+}
+
+/* O span con clase destacado en laranxa */
+span.destacado {
+    color: orange;
+}
+
+/* Título h2 en azul */
+#subtitulo {
+    color: blue;
+}
+
+/* As ligazóns contidas en p */
+p a {
+    color: red;
+}
+
+/* Os textos con énfase dentro de a en azul */
+a em {
+    color: blue;
+}
+
+/* O span con clase especial en morado */
+span.especial {
+    color:darkmagenta;
+}
+
+/* O título da táboa en azul e separado da táboa */
+caption {
+    color: blue;
+    padding: 5px;
+}
+
+/* Bordes da táboa */
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+/* Os títulos de cabeceira da táboa en cor vermella */
+th {
+    color: red;
+}
+
+/* Os títulos de cabeceira de clase especial da táboa en cor laranxa */
+th.especial {
+    color: orange;
+}
+
+/* Os datos das celas da táboa en cor verde */
+td {
+    color:rgb(35, 163, 35);
+}
+
+/* Os textos destacados dentro das celas da táboa en laranxa */
+td strong {
+    color: orange;
+}
+
+/* O texto contido dentro do div adicional en cor oliva */
+#adicional {
+    color:olive;
+}
+
+/* O span espcial dentro do div adicional en cor rosa */
+#adicional #especial {
+    color: fuchsia;
+}
+
+/* As ligazóns dentro do div adicional en cor verde */
+#adicional a {
+    color: rgb(35, 163, 35);
+}
